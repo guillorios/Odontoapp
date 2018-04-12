@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnProcedCrear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK6QAA
+        CukB/XXO0wAAAv9JREFUOE+Fk3lIk3EYx1+jiw7IsMhIzaMyojJUDC27PKAssVRi5E2JVqLhpoQnDcdc
+        8+wgCLKc5q2U4ZpnVGLzWE6X5mRp/uGamgeJ2tRvz2slpUQPfPj9Xni+X77P+z4vwywpobDeIS6uvFAs
+        rlZlZdUPZWTUTqWmvpxKTi4f4fFyuzgcUYWTU9Bpkq0nVizVMxJJ6+TcHDA+Dmi1QF+fHj09M1CppvDm
+        zReUlHTBzS12mISOxMZlBvn5HXNqNSCXj6GqagCVlf3IzVUiPb0OCQll8PS8BXv7K+Mk5BFmfxoY0IPB
+        48ct0xoN0NAwgvx8NfLyunHvnhwpKTJwuQXw8RHAwSF0lHpTCSum+4SJo9JuW7t0v9XX1HPe2QrFwKxO
+        951ij0Gp1KG5WYsXL9R48kQBkagWMTFFOHo08huJRcQupt/V/KNe+R7y6XcQdcYgRnp5vlv3CQrFBAoK
+        einBR9y/L4dA8DOBt7cABw8GjC0afHC2HCrrkIKvPw+x3g83Bs/A760TKlSlaGrSLozBGvD5VYiKkiyY
+        nDzJnSSD2wsJHhyyig5OD5gPG3SFcPISsvTBiB3yAqf5MNIV8ejVDEMqVUMiaUda2iv4+gopQSA7gnjB
+        gMrQNmhvtmvDPoT2uYI/fhF3ZkMQ9/UCOConBNR6oKallcR1lCAP/v6ZcHHh/mWwkkxMrXibHx6TWSNE
+        cwqJoz4Qzweg5jMP/Z0CdJSEo+mtGsnJz3H9eg5sbIImFkf49R1X0WluzjOU2FdawE9zHHlN/kDbA0D9
+        CKhOQo9MRrsgg4dHEkxNnZ9R/y3C4s89YE0szaI3Fe8oNoK2KBJ4JYDudQbKc7KQk5E5ExEhbDc0tMyl
+        vrsEhzBauomrmbXM7i2RG541ZnsBpVzEhgXiZnwiwq5e66fmp0Q8cZYdm2DHX1armXWMdbiNMT/B2bTw
+        yIE9jbZ29kPu7u5t1CkkHIhN/xL/dltDl52EGxFIcInEX/ftdLJr/99i47F/21bChGBfmDHBmi/WDx0y
+        oaGPbzWCAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnProcedCrear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 436</value>
+  </data>
+  <data name="btnProcedCrear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 39</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnProcedCrear.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="btnProcedCrear.Text" xml:space="preserve">
+    <value>CREAR MENSAJE</value>
+  </data>
+  <data name="&gt;&gt;btnProcedCrear.Name" xml:space="preserve">
+    <value>btnProcedCrear</value>
+  </data>
+  <data name="&gt;&gt;btnProcedCrear.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnProcedCrear.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnProcedCrear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="memoProcedimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 91</value>
+  </data>
+  <data name="memoProcedimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 46</value>
+  </data>
+  <data name="memoProcedimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="memoProcedimiento.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;memoProcedimiento.Name" xml:space="preserve">
+    <value>memoProcedimiento</value>
+  </data>
+  <data name="&gt;&gt;memoProcedimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;memoProcedimiento.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;memoProcedimiento.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtIdProced.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 366</value>
+  </data>
+  <data name="txtIdProced.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="txtIdProced.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="txtIdProced.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtIdProced.Name" xml:space="preserve">
+    <value>txtIdProced</value>
+  </data>
+  <data name="&gt;&gt;txtIdProced.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;txtIdProced.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;txtIdProced.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbProcedimientos.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmbProcedimientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 59</value>
+  </data>
+  <data name="cmbProcedimientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 26</value>
+  </data>
+  <data name="cmbProcedimientos.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="&gt;&gt;cmbProcedimientos.Name" xml:space="preserve">
+    <value>cmbProcedimientos</value>
+  </data>
+  <data name="&gt;&gt;cmbProcedimientos.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.ComboBoxEx, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;cmbProcedimientos.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;cmbProcedimientos.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnImprimirInforme.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAACt0RVh0Q3JlYXRpb24gVGltZQBEbyAxNCBOb3YgMjAwMiAyMzo1OToyNCArMDEw
+        MLldn3gAAAAHdElNRQfTAhENGh6I4fNQAAACQUlEQVQ4T62S32tSYRjHB91124//oIuIbvoLBl121f2g
+        MqbVxGOu8uiOvzXcSb0Q2iAd5lGXTV01b8SCBYqjUlhhweY2nbbmD7CcHErQ8+09J1hbREb05X0uzsv7
+        /TzPeZ5nZOR/KRaLnbRaraNa7R05y067wiFuaS4QWJPJrlB/lSMSicRbzSZ+FTe/MFCplOeHQgKBwDGO
+        CzVEQPsbUO8COySaA+A2Ta8OBYgPHHbr5NvSDmp7wHoLKNaBD23Av5DCpIY6NxRiMjInHjycH6yTzKvk
+        b/IE8uYL8Cj3EeNXLz92u92jY2NjR34Likajpz0et/wWbdhb2QXmkq8x5ZyB/IYKyutyLCYSyOVy8Hq9
+        2+w0e+kQhDQwRYT3xaIQ4oLCxLVx3HPexfN0CtuVCnieR7/fB8j5tLOLZDIpMHpmah9CsvPtdhvlchkb
+        GxtCvV4XiNDr9dDtdtHpdNBqtbD2roQLL8+CyWvgMDta+wCO40gSHk0yxlqtJkKkaDQa2NzcRD6fRzqd
+        xtPFZ0iEn+C+ZwY3KQ2/DwiHw18rpNRCoSAZxWyieXl5GfF4HMFgECzLwmAwQK/Xw2KxgKbpnwCyhWTy
+        P1StVpHNZpHJZMSGSQaGYSSzWq2GQqGQvjWaAxX4fL4XxCAMBmRrDojcSwClUgmtVguTySSaezqdbonE
+        xUOTmJ2dPWO3272kH5+3trYkjN/vh9lsFksWSKwYjcYJl8t1/I8L5XQ6j1IUJbPZbK+IoURKNRPzqaFb
+        +K8PvgNqSMUVWK6UVAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnImprimirInforme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 391</value>
+  </data>
+  <data name="btnImprimirInforme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 27</value>
+  </data>
+  <data name="btnImprimirInforme.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="btnImprimirInforme.Text" xml:space="preserve">
+    <value>IMPRIMIR</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirInforme.Name" xml:space="preserve">
+    <value>btnImprimirInforme</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirInforme.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirInforme.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirInforme.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnFirmaPaciente.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnFirmaPaciente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAK
+        6QAACukB/XXO0wAAACt0RVh0Q3JlYXRpb24gVGltZQBEaSAxOSBBdWcgMjAwMyAxNzo1MjowNiArMDEw
+        MG3sBDAAAAAHdElNRQfTCBMPNgHf5ZFPAAACLklEQVQ4T72STUjTcRjHv8oks8KKiF6g0KgIo6iThy5e
+        gk4euniKDlZQkwLfmS6Gr4MhZe6FsKnoZmUqLmS2tNqq5dShjbW56QItLLLNglatvXz7zyga8zKCfvA9
+        /ODzfJ6Hhwf4X8+jQKapCZ1W9YaVISlGB6uQk1LvGQ2UQXcB+VGIZycHJbCsKVjSodDeCtm8Gvm/gcUu
+        5Hr6d4X54STpPUjObqS5BeEkwdtuVCyOHoqFXMf4sjMz6riG03HI1oL6kDOPnBOKHVuEgCMNWEkQLOuR
+        M9u3I8RAIek7LGQTn8oxFoem2zBO33ZyOpOxSTAipOcKRhIEU9fREvbmk/NHSKcAO0FzM2yrAhX88X90
+        Avz+HPTeBjsu4nyCwHUrY4ELub9GtKczbAOfKE+NfHbW7b9XitLeMryaUIOBh6BBive6EmT9ERiqsc3d
+        nRajS8SoMN6PF0KXXnCg4egF2w1Rg70j23//KhRdYhRrxeg31aI4obu+EruHavHO3QMGLeC3Z+CwDMvt
+        55BlbUsfY6iIX+37OKlBxCSDPmn7NiWqH8sh0V5CSacYVmM9YgPlKIuDM6o0K9/sJd3rGBImeyDFzWRB
+        ++a5L64CjmvWB+9WoF13GWdNEmTEQUcryn13wE+PQKMMAUsd9iQJprTZES4dJ19vpV9Y0rAEqr8hWzOK
+        jDVoMjcib83rMzbCS49o9UDMCoQschxI6c77qnCirxqewRoEDJU4k1Lxv8I/AVR6KlGh86fCAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="btnFirmaPaciente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 391</value>
+  </data>
+  <data name="btnFirmaPaciente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 27</value>
+  </data>
+  <data name="btnFirmaPaciente.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="btnFirmaPaciente.Text" xml:space="preserve">
+    <value>Firma Biometrica Paciente</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaPaciente.Name" xml:space="preserve">
+    <value>btnFirmaPaciente</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaPaciente.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaPaciente.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaPaciente.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnFirmaOdonto.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnFirmaOdonto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAK
+        6QAACukB/XXO0wAAACp0RVh0Q3JlYXRpb24gVGltZQBEbyA1IERleiAyMDAyIDE0OjIwOjQyICswMTAw
+        jtCffwAAAAd0SU1FB9MCGww1F41e+coAAAKFSURBVDhPrZNZSNRRGMWPSzpaZGokbYYtipkKJihpgdBO
+        BvVg9lI9qEGNFaipjBriliAG5jga4oJLi6mp5NhklpbmuJDo1DTKKBaZZI4Fmco4c/rbg2PYi9SFw324
+        5/wufJwP+F+HjhCx7JQ/XRFIT/hwJxyXsjVZECkyUNIhWz1Vl4Tm2ji4LL7TSQi74yhP2pcxxb+H+2wa
+        WHo2lSFei6a+fEin1UHkV0GajayVoM0ESPLbS1/zUub4jnLmvN44Ej5riHBW88qJcDY2rv1Qiu2a6k16
+        fjlMDrqR79ewNRt6E8ALQcw9NMCJ03r2QvglgLMSF06L/R6xpc5Necs8dU7lQQ4J4X57QWBTGqZMgD3w
+        Mx4QtRm0Z8hPWwRACNlwnOOyg6McVnn3yayU1G4g34ho7AbnBZVfQ5MJ4A4nXaZnt1EaIASDyWLhjneh
+        tuDICEn3PpnFJFWgoQucbQcH74HFlxBhAgBmwwX2Y6zyIbO9yFfBNDTv5wvpsabvqpRdD6MQdTcab7tk
+        oO4pWJ+E8YpI2C4C6uOxXl1mZuSAAw2dW6nv2c1RuTdr0rwvKm9bpvUW20023EBWqRhhRWJUKxIR9kd9
+        KmOxuS4Rn9Xl4PRLC860W1Geaj1RGA7bjlzzZ5wL5c/eHezOx7wiGZXLuqeUIv55JiRFlxFZIkaHPBXG
+        mhhELxj78sw6+HEbqbbm3GvwSRLuLAcUrhv68S6Infk20w+uo7DiKi4oJFi1YOzPQYz2PvitBZQnQ9eW
+        AudlgJ4iu3mOCQMcduCkMKTHEuQtNSlvIlSegIzWdHj8dXXk6RikxvJ3QVqzMNeWCdcV7VhVHAKr4qGp
+        TYCuPhbnVhT+V/Mv5p1ir624f1QAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnFirmaOdonto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 391</value>
+  </data>
+  <data name="btnFirmaOdonto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 26</value>
+  </data>
+  <data name="btnFirmaOdonto.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="btnFirmaOdonto.Text" xml:space="preserve">
+    <value>Firma Biometrica Odontologo</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaOdonto.Name" xml:space="preserve">
+    <value>btnFirmaOdonto</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaOdonto.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaOdonto.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnFirmaOdonto.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnEliminar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK6QAA
+        CukB/XXO0wAAArJJREFUOE99k29IU1EYxu+W9aEIUwyhTGPoB5ehGSI2TNAhFJJ90EFW1r4oRKuMpiKm
+        meLQ5Z8kNYqYf+aotBTTXIu5aQtkI13OuXQkWgjrjzWHomb69N5lIk668OOee3if5zzn3PMyjOfDoan/
+        sYWEpsrKdNH5+e1PKipeW2tqdN+qq7UL5eWvFoqK2meys5ttaWnyDoFAfJJKdxFcDxel8t38ygowOws4
+        HMDk5DLGx5dgtS7AYPiCtjYbEhNzv5PwGLHbw0ClsqzY7YDR6ERPz2d0dU2huXkYVVW9KCh4juTkYkRF
+        ZcySMJsI8jBQKEyLExOAXj8DlcqOlpYPqKszorRUA6n0MVJTZYiOzvxJwnIieLMBR6Ua+uVwLFFsJyyW
+        rzCZHOjutqOpaQhyuRY5OU8RG3ttjoRyImTtoNd9OIOD0+4EAwNOjI7+QH//NOrrjZDJ/iZISZEhPPyC
+        c0uDNwyToBXErrpcv2HrNUETHompF1qo1XaUlPQgK0vpNomPl86TwR2PBL2+O12QxMAsk+NlTAwgOQQt
+        PxR2+wyUyveorOyDSFRGCS6yW6jwMHjAMBbcjMPHuABAHAoDzxcj+mEoFIOUQE0JWpCefhdCoXRrg/tC
+        4WUdbw+QcRhzJwJguHrDfZCNjWb6jToUFnZCImlARITY5bEFPcOIDTzvZWSGAedDgLMHoQnyw9hbK1pb
+        baitNSAv7xmSkm4hMPB4JxkUE7z142/dxh3B9TBYjvqt9kUcWMYpf+DcXmgjj6yq1eZFkajkE59/ut/H
+        J7iJRPeIM4TfuoFmO7ezzdtrUcAwDXTBFTVcxvzIizNGFazgIVFJ3CYkBNsLgYTXxovkTx9pRC6RSiQQ
+        l4grRDzBX4u8j97em8Ws0Q6CNWHvty/BdhtbvH9tzHbev/beuLB7/Ac1WmhCJVErmwAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="btnEliminar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 437</value>
+  </data>
+  <data name="btnEliminar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 39</value>
+  </data>
+  <data name="btnEliminar.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="btnEliminar.Text" xml:space="preserve">
+    <value>ELIMINAR</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.Name" xml:space="preserve">
+    <value>btnEliminar</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnModificar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK6QAA
+        CukB/XXO0wAAAv9JREFUOE+Fk3lIk3EYx1+jiw7IsMhIzaMyojJUDC27PKAssVRi5E2JVqLhpoQnDcdc
+        8+wgCLKc5q2U4ZpnVGLzWE6X5mRp/uGamgeJ2tRvz2slpUQPfPj9Xni+X77P+z4vwywpobDeIS6uvFAs
+        rlZlZdUPZWTUTqWmvpxKTi4f4fFyuzgcUYWTU9Bpkq0nVizVMxJJ6+TcHDA+Dmi1QF+fHj09M1CppvDm
+        zReUlHTBzS12mISOxMZlBvn5HXNqNSCXj6GqagCVlf3IzVUiPb0OCQll8PS8BXv7K+Mk5BFmfxoY0IPB
+        48ct0xoN0NAwgvx8NfLyunHvnhwpKTJwuQXw8RHAwSF0lHpTCSum+4SJo9JuW7t0v9XX1HPe2QrFwKxO
+        951ij0Gp1KG5WYsXL9R48kQBkagWMTFFOHo08huJRcQupt/V/KNe+R7y6XcQdcYgRnp5vlv3CQrFBAoK
+        einBR9y/L4dA8DOBt7cABw8GjC0afHC2HCrrkIKvPw+x3g83Bs/A760TKlSlaGrSLozBGvD5VYiKkiyY
+        nDzJnSSD2wsJHhyyig5OD5gPG3SFcPISsvTBiB3yAqf5MNIV8ejVDEMqVUMiaUda2iv4+gopQSA7gnjB
+        gMrQNmhvtmvDPoT2uYI/fhF3ZkMQ9/UCOConBNR6oKallcR1lCAP/v6ZcHHh/mWwkkxMrXibHx6TWSNE
+        cwqJoz4Qzweg5jMP/Z0CdJSEo+mtGsnJz3H9eg5sbIImFkf49R1X0WluzjOU2FdawE9zHHlN/kDbA0D9
+        CKhOQo9MRrsgg4dHEkxNnZ9R/y3C4s89YE0szaI3Fe8oNoK2KBJ4JYDudQbKc7KQk5E5ExEhbDc0tMyl
+        vrsEhzBauomrmbXM7i2RG541ZnsBpVzEhgXiZnwiwq5e66fmp0Q8cZYdm2DHX1armXWMdbiNMT/B2bTw
+        yIE9jbZ29kPu7u5t1CkkHIhN/xL/dltDl52EGxFIcInEX/ftdLJr/99i47F/21bChGBfmDHBmi/WDx0y
+        oaGPbzWCAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnModificar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 437</value>
+  </data>
+  <data name="btnModificar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 39</value>
+  </data>
+  <data name="btnModificar.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="btnModificar.Text" xml:space="preserve">
+    <value>MODIFICAR</value>
+  </data>
+  <data name="&gt;&gt;btnModificar.Name" xml:space="preserve">
+    <value>btnModificar</value>
+  </data>
+  <data name="&gt;&gt;btnModificar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnModificar.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnModificar.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALDAAA
+        CwwBP0AiyAAAAwVJREFUOE9Vk39MzGEcxz91XYlwjsr14/rJEq50nZLkwtDIj1WnhBwyFTKdMq0tlpmt
+        tIz8Ec38cVaENUa4fjlSIqWG2Wxa7cZxCZPaubfn+3W+6tne2/e7Pa/383yez/tDNG5pngV4JDYEHk9/
+        FNmZ2a4e2vY41hJfP7cj4Py0E9O1LgFsqwuTw3hG+N47qEjO61s9dO37aRhsldC90aDUlI7SgVTk9qxC
+        2HXZZ9cikZYBEibRBJPdgws0Jf1p1nbU4qq1ENp3UdhlyEJAnQyH3i5B3utlOPwqBiE33ccogw4y2IPJ
+        kTdJej7X60BP/LARelSN7kf5zzSk9IWheeARuDWn3hNZr1TI6VJh33MlJleKzeRNmxg6gy9nxV2vU3pL
+        CfS/CnHmxxZU/EhHoWkt0lpSeIPfNkD50B/ajvnIeKpA7E05aANdYnAYkzMlNob2PRi5gLTecEQ0uSOq
+        1RNxT2SYfZug7fxrMmazIt44D0nGYCQ0BINy6QWDNUxSSmldPKq3HIXqRhSsVsAyMoyh0W/4NjaMT79M
+        DGdXsC9N11Ko6+VwOe70hcFHmHxpfeOi0UpTJtR31Pw2q80mICO/R2Bj//9W1rv1iKzxgEsRb3CSKYiU
+        dV69FR92ILEtGGENEkQaJFjSMhMLm12xtXuVAOe8Xwe1wQuh1bPgsJu6BAO3MqdSXfdaHOxezBTNa0+n
+        Apk9mwVY15+EeAYra2XwOTcVpKIaoQTRTgrxq/H4ms3apG0PR0abAhuNgXhguc0bFPRroG7yRnS9N+ZU
+        SeGU72gmMV0UHpGP51HKDqyRWrezNiUbQ5HQ7Ifqj+U4MbgXcY0yRNR6IqhKgsnFzmMkpyuMKRbaaM+2
+        lLaRbkqF2BJzywcr78mx/L4/VCyJIZel8D7rBied6JMdLmPMGnukhbngsu1JMkqiBKqmLHo56ZijWVwg
+        MrPovqAIVrOYDw93Mgf/j/K4oeBMpEzhTKlM+faX5trF9TyFSWE/eeIwjTPhrsSN7EwmOd/nv/K1mzvb
+        SxaQP9DanYEkI5PhAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 437</value>
+  </data>
+  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 39</value>
+  </data>
+  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="btnSalir.Text" xml:space="preserve">
+    <value>SALIR</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
+    <value>btnSalir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnNuevo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK6QAA
+        CukB/XXO0wAAArdJREFUOE91k3tI01EUx69RIEiEGESCCmYIRmnFMnzE8AWpZYEONDQlsP6ZJLKthHzk
+        cuV8JKai6Mi14TS1mkgraz6yQkFWyNQ0jDUidT7XNkVw3+7VsRLngQ/8fuee8+V77z2XEBrwIu625sth
+        pmOE+yOQnNd4k6M0vZ/i5gLW8i9whLhbA0m86aq/Zr4wdnEm4Yx5uE5sbXqgWi8re7NWXPxiUSh8NpGW
+        Jn0ZHp4VTzs9KPucCta7HI7lNFFYa6LtWL8Bu4GPDWE05lXPMT1hhV6/hqGhOXR0TCAu7s4CbQyjHHQK
+        LJ4gsWsV3LHNeR4wSmBfiIBFdA7jeflQNX9GVZUWBQVdSEoqAYeTvUobhRQ/p4AhkETMnSLvNr6nA798
+        sGlKg6XtGnTV5WisGURp6VsIBCqkpEgQGnpzmTaWUQKcAgN+xGf81snHKw8T7Juv0rHRdAlL2akYb9eg
+        p2cacrkOUul7iETtiIy8baGNUspxx+EScpaQA3XRXpHa3Pu2pSIxDN0y9FZ2olU+hvr6EUgk2w6SkyUI
+        Dr6+skvAoeShlH34Y9TPoleth1IxCaVyaktALH6N3FzFlkhUlMBK68t3OHDsZV9j4/Cq0QjMzNgwMvKb
+        nrwRavUkFIqvqKwcAI/3iDrIZFuocCXgJpN9NE1NrUGrNaG1dZo6+Ia6OuZAQx0okZFRjZgYwd4CDQ2f
+        ZpeX6U2Ozm0dXlfXJFpavtBr7ENhoRp8/lOEhGSZ99oCEYnaavv7TXadzkYFjOjuNlD7Y6itHUJ+ficS
+        E4vg63tBTQVKKP4753n77zCXm1nE493ry8lpNOTlKcx8vszM44l/BgVdGfT0DJDTmieUVFbrSoA9Hl/K
+        RQqfUuwYGjY47Jvl2FtgNazWZbCFQxRvh002cQxmmeXY2p7N/yu6esYstyv+AoNeaNvMazlxAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="btnNuevo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 437</value>
+  </data>
+  <data name="btnNuevo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 39</value>
+  </data>
+  <data name="btnNuevo.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="btnNuevo.Text" xml:space="preserve">
+    <value>NUEVO</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.Name" xml:space="preserve">
+    <value>btnNuevo</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnAdicionar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK6QAA
+        CukB/XXO0wAAAnhJREFUOE99k11oUmEYx1+joIjopqsuCqIP6DIYQkPYRY3qZhexXXgRdVNXG6Pwg+ZG
+        a+RQEd2iDWVsMadzMVrBPqiYOlhFOidTxlLrTLEPp1tqq5mG/XvOmVppdeAHh5f3/3ue87znZaz6EdHS
+        //hLhJY0GqdYpZoY0+ufLff2OpNG42xWq32S7eyc2JDLLStSqe5Rbe2VC7R1L7GjyjIy4v1aKACZDBCP
+        A5HId4RCOSwvZzE/v4bx8RXU1yvXKXia2FclsNkChXAYcLvTmJmJYXIyCovFD4PBgY6Oh2ho6EJNzdUM
+        BeXE4SrB0JDnG8cBLtcGbLYwrNbX6OtzQ61+CpnMjsbGbojF11IU1BJHKwUim82Xj8dz1HYafn8CHk8c
+        U1NhDA/7oNPNQqF4AImk9QsFdcSx4qDLHtHAgOfzdgefYLe/oQ6C6O93k+w9yTg4nX5MT7/MUUJPHK8S
+        WCzuzWg0R5siQthqDQmCpaV3YHcZWA+hJxgzECeqBGbzq0wsBnDcFg3yI1ZX03QCCXi9H0AR9GQvgWkY
+        VCrVfQqfInb9PgfR4ODzZCiUhcORxOhoGIuLiV9VdQz6TSlYF3XQSbQLnZwkdpckIpPpRTyVAlVcE4YX
+        CJCAWuYr82H1+kW0Rc9ByZ0FUwqCP49ToRi753Ilf/h8WySIIRhMg3XTxjvbVfkwu0nvMqJVEBiLsyh/
+        yYG6usu3mpranS0t5ujCApf3+bj83Jx/k29Z8fYM2HUh+JgwETcqf6idtHCIOE80E7eLR2YoV20WBHy4
+        vhguz6DUBi/ZTxwkjhD8efNHJiHaim2XKvM39p9P5XXeU6zIy/h7UK78ExoBcYxNzu0qAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="btnAdicionar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 93</value>
+  </data>
+  <data name="btnAdicionar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 45</value>
+  </data>
+  <data name="btnAdicionar.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="btnAdicionar.Text" xml:space="preserve">
+    <value>ADICIONAR</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionar.Name" xml:space="preserve">
+    <value>btnAdicionar</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionar.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionar.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblProcedimientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 59</value>
+  </data>
+  <data name="lblProcedimientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="lblProcedimientos.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="lblProcedimientos.Text" xml:space="preserve">
+    <value>Procedimiento</value>
+  </data>
+  <data name="&gt;&gt;lblProcedimientos.Name" xml:space="preserve">
+    <value>lblProcedimientos</value>
+  </data>
+  <data name="&gt;&gt;lblProcedimientos.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;lblProcedimientos.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblProcedimientos.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="dgProcedimientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 143</value>
+  </data>
+  <data name="dgProcedimientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 243</value>
+  </data>
+  <data name="dgProcedimientos.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="&gt;&gt;dgProcedimientos.Name" xml:space="preserve">
+    <value>dgProcedimientos</value>
+  </data>
+  <data name="&gt;&gt;dgProcedimientos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgProcedimientos.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;dgProcedimientos.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cmbfechaProced.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="cmbfechaProced.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 59</value>
+  </data>
+  <data name="cmbfechaProced.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="cmbfechaProced.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="&gt;&gt;cmbfechaProced.Name" xml:space="preserve">
+    <value>cmbfechaProced</value>
+  </data>
+  <data name="&gt;&gt;cmbfechaProced.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbfechaProced.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;cmbfechaProced.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblfechaProced.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 59</value>
+  </data>
+  <data name="lblfechaProced.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 23</value>
+  </data>
+  <data name="lblfechaProced.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="lblfechaProced.Text" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="&gt;&gt;lblfechaProced.Name" xml:space="preserve">
+    <value>lblfechaProced</value>
+  </data>
+  <data name="&gt;&gt;lblfechaProced.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;lblfechaProced.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblfechaProced.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblTituloVentana.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 10pt</value>
+  </data>
+  <data name="lblTituloVentana.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 12</value>
+  </data>
+  <data name="lblTituloVentana.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 23</value>
+  </data>
+  <data name="lblTituloVentana.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="lblTituloVentana.Text" xml:space="preserve">
+    <value>HOJA DE PROCEDIMIENTO DIARIO</value>
+  </data>
+  <data name="&gt;&gt;lblTituloVentana.Name" xml:space="preserve">
+    <value>lblTituloVentana</value>
+  </data>
+  <data name="&gt;&gt;lblTituloVentana.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;lblTituloVentana.Parent" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblTituloVentana.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RibbonClientPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RibbonClientPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RibbonClientPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 486</value>
+  </data>
+  <data name="RibbonClientPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RibbonClientPanel1.Text" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;RibbonClientPanel1.Name" xml:space="preserve">
+    <value>RibbonClientPanel1</value>
+  </data>
+  <data name="&gt;&gt;RibbonClientPanel1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Ribbon.RibbonClientPanel, DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec</value>
+  </data>
+  <data name="&gt;&gt;RibbonClientPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RibbonClientPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="ErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>11, 3</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>26</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>532, 486</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value> Procedimiento Diario</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Name" xml:space="preserve">
+    <value>ErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmProcedimientoDiario</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

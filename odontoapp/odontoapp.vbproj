@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20FA830D-2E87-460D-9F78-A18EE5151B61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Orthosoft.My.MyApplication</StartupObject>
+    <RootNamespace>Orthosoft</RootNamespace>
+    <AssemblyName>Orthosoft</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Orthosoft.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>Off</OptionInfer>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <OptionCompare>Binary</OptionCompare>
+    <ManifestCertificateThumbprint>5DEECFF0797D28E3A676C32B0B53B3B46628F7F1</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Orthosoft_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>ftp://ftp.Odontoapp.com/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.Odontoapp.com/update/</InstallUrl>
+    <SupportUrl>http://www.Odontoapp.com</SupportUrl>
+    <TargetCulture>es</TargetCulture>
+    <ProductName>Odontoapp</ProductName>
+    <PublisherName>Sion Ingenieria</PublisherName>
+    <MinimumRequiredVersion>2.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2010.08.30.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Orthosoft.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.MonthLib, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Common Files\DotNetBar 6.6.0.5\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=6.6.0.5, Culture=neutral, PublicKeyToken=1580fd29a89f4eec, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\DotNetBar 6.6.0.5 Crack For VS2005\DevComponents.DotNetBar2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v7.3, Version=7.3.5.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v7.3, Version=7.3.5.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v7.3, Version=7.3.5.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v7.3, Version=7.3.5.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPCtlXTypeLibNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=c0c98f712d5392a7, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPCtlXWrapperNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=c0c98f712d5392a7, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPDevNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPEngNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPShrXTypeLibNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=c0c98f712d5392a7, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.4.0.1, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Common Files\DotNetBar 6.6.0.5\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Common.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.GridEX.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Schedule.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.UI.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.0.8.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Speech">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actt.vb" />
+    <Compile Include="AppData.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ArrayControles.vb" />
+    <Compile Include="CambiarResolucion.vb" />
+    <Compile Include="CaptureForm.designer.vb">
+      <DependentUpon>CaptureForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CaptureForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cIniArray.vb" />
+    <Compile Include="CLASE_ASIGNAR_PERFILES.vb" />
+    <Compile Include="CLASE_AYUDA.vb" />
+    <Compile Include="CLASE_CALENDARIO.vb" />
+    <Compile Include="CLASE_CALLCENTER.vb" />
+    <Compile Include="CLASE_CALLCENTER_N.vb" />
+    <Compile Include="CLASE_CEGRESO.vb" />
+    <Compile Include="CLASE_CITAS.vb" />
+    <Compile Include="CLASE_CONSULTA.vb" />
+    <Compile Include="CLASE_CONSULTORIO.vb" />
+    <Compile Include="CLASE_CONTACTOS.vb" />
+    <Compile Include="CLASE_CONTRATOS.vb" />
+    <Compile Include="CLASE_CONTROL.vb" />
+    <Compile Include="CLASE_DETALLE_CEGRESO.vb" />
+    <Compile Include="CLASE_DETALLE_CUOTAS_ADICIONALES.vb" />
+    <Compile Include="CLASE_DETALLE_FACTURA.vb" />
+    <Compile Include="CLASE_DETALLE_LIBRODIARIO.vb" />
+    <Compile Include="CLASE_DETALLE_RCAJA.vb" />
+    <Compile Include="CLASE_DOCTORES.vb" />
+    <Compile Include="CLASE_EMPLEADOS.vb" />
+    <Compile Include="CLASE_ENCRIPTAR.vb" />
+    <Compile Include="CLASE_ENTIDADES.vb" />
+    <Compile Include="CLASE_ESPECIALIDADES.vb" />
+    <Compile Include="CLASE_EVENTOS.vb" />
+    <Compile Include="CLASE_FACTURA.vb" />
+    <Compile Include="CLASE_GALERIA.vb" />
+    <Compile Include="CLASE_GASTOS.vb" />
+    <Compile Include="CLASE_GENERAL.vb" />
+    <Compile Include="CLASE_GENERAL_ACCESS.vb" />
+    <Compile Include="CLASE_GENERAL_EXCEL.vb" />
+    <Compile Include="CLASE_GENERAL_FOX.vb" />
+    <Compile Include="CLASE_HARDKEY.vb" />
+    <Compile Include="CLASE_HCLINICA.vb" />
+    <Compile Include="CLASE_HCLINICA_GENERAL.vb" />
+    <Compile Include="CLASE_HCLINICA_ORTO2.vb" />
+    <Compile Include="CLASE_HCLINICA_ORTO3.vb" />
+    <Compile Include="CLASE_HCLINICA_P2.vb" />
+    <Compile Include="CLASE_HCLINICA_P3.vb" />
+    <Compile Include="CLASE_HCLINICA_P4.vb" />
+    <Compile Include="CLASE_HORARIOS.vb" />
+    <Compile Include="CLASE_HUELLAS.vb" />
+    <Compile Include="CLASE_IMAGENES.vb" />
+    <Compile Include="CLASE_INTERNET.vb" />
+    <Compile Include="CLASE_LIBRODIARIO.vb" />
+    <Compile Include="CLASE_MENSAJES.vb" />
+    <Compile Include="CLASE_OGRAMA.vb" />
+    <Compile Include="CLASE_OPERADOR.vb" />
+    <Compile Include="CLASE_PERFILESACCESO.vb" />
+    <Compile Include="CLASE_CUOTAS.vb" />
+    <Compile Include="CLASE_PRESUPUESTO.vb" />
+    <Compile Include="CLASE_PROCEDIMIENTOS.vb" />
+    <Compile Include="CLASE_PROVEEDORES.vb" />
+    <Compile Include="CLASE_REPORTEENVIOS.vb" />
+    <Compile Include="CLASE_TEXTO_PROCEDIMIENTO.vb" />
+    <Compile Include="CLASE_NOTAS.vb" />
+    <Compile Include="CLASE_PACIENTES.vb" />
+    <Compile Include="CLASE_PROCEDIMIENTO_DIARIO.vb" />
+    <Compile Include="CLASE_RCAJA.vb" />
+    <Compile Include="CLASE_REGISTRO.vb" />
+    <Compile Include="CLASE_SCHEDULER.vb" />
+    <Compile Include="CLASE_UNIDADES.vb" />
+    <Compile Include="EnrollmentForm2.designer.vb">
+      <DependentUpon>EnrollmentForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaOdontoapp.Designer.vb">
+      <DependentUpon>frmAcercaOdontoapp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcercaOdontoapp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarHuella.Designer.vb">
+      <DependentUpon>frmBuscarHuella.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarHuella.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarProveedor.Designer.vb">
+      <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprobanteEgreso.Designer.vb">
+      <DependentUpon>frmComprobanteEgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprobanteEgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvensiones.Designer.vb">
+      <DependentUpon>frmConvensiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvensiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesbloqueoDias.Designer.vb">
+      <DependentUpon>frmDesbloqueoDias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDesbloqueoDias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioSMS.Designer.vb">
+      <DependentUpon>frmEnvioSMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioSMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioSMSInd.Designer.vb">
+      <DependentUpon>frmEnvioSMSInd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioSMSInd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadoCuenta.Designer.vb">
+      <DependentUpon>frmEstadoCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadoCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExplorer.Designer.vb">
+      <DependentUpon>frmExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExplorer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGastos.Designer.vb">
+      <DependentUpon>frmGastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaOrtodoncia3.Designer.vb">
+      <DependentUpon>frmHistoriaClinicaOrtodoncia3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaOrtodoncia3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaOrtodoncia2.Designer.vb">
+      <DependentUpon>frmHistoriaClinicaOrtodoncia2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaOrtodoncia2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaGeneral.Designer.vb">
+      <DependentUpon>frmHistoriaClinicaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaOrtodoncia.Designer.vb">
+      <DependentUpon>frmHistoriaClinicaOrtodoncia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoriaClinicaOrtodoncia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHorarios.Designer.vb">
+      <DependentUpon>frmHorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuellas.Designer.vb">
+      <DependentUpon>frmHuellas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHuellas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImagenes.Designer.vb">
+      <DependentUpon>frmImagenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImagenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientoDiario.Designer.vb">
+      <DependentUpon>frmMovimientoDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientoDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdontogramaGrafico.Designer.vb">
+      <DependentUpon>frmOdontogramaGrafico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdontogramaGrafico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedimientosItems.Designer.vb">
+      <DependentUpon>frmProcedimientosItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedimientosItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgresoEnvioEmail.Designer.vb">
+      <DependentUpon>frmProgresoEnvioEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgresoEnvioEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.vb">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmskype.Designer.vb">
+      <DependentUpon>frmskype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmskype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashOrthosoft.Designer.vb">
+      <DependentUpon>frmSplashOrthosoft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashOrthosoft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardKey_Code.vb">
+    </Compile>
+    <Compile Include="ImageManipulation.vb" />
+    <Compile Include="rptBeneficiosRecomedaciones.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBeneficiosRecomedaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCEgresoFormato1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCEgresoFormato1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptContratoPrestServ-SCO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptContratoPrestServ-SCO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHistoriaClinica.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHistoriaClinica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHistoriaClinicaGeneral.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHistoriaClinicaGeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHistoriaClinicaOrto2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHistoriaClinicaOrto2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHistoriaClinicaOrto3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHistoriaClinicaOrto3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptLibroDiario.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLibroDiario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPresupuesto.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPresupuesto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptProcedimientosDiarios.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptProcedimientosDiarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRCajaFormato1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRCajaFormato1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRCajaFormato21.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRCajaFormato2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="VerificationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinAPI.vb" />
+    <Compile Include="clsNumeros.vb" />
+    <Compile Include="DiscoDuro.vb" />
+    <Compile Include="EnrollmentForm.vb.Designer.vb">
+      <DependentUpon>EnrollmentForm.vb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentForm.vb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppointment.Designer.vb">
+      <DependentUpon>frmAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditoria.designer.vb">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutenticacion.designer.vb">
+      <DependentUpon>frmAutenticacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutenticacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarDoctores.designer.vb">
+      <DependentUpon>frmBuscarDoctores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarDoctores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmpleados.designer.vb">
+      <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEntidad.designer.vb">
+      <DependentUpon>frmBuscarEntidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEntidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPacientes.designer.vb">
+      <DependentUpon>frmBuscarPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendarioPaciente.designer.vb">
+      <DependentUpon>frmCalendarioPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendarioPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCentralTelefonica.designer.vb">
+      <DependentUpon>frmCentralTelefonica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCentralTelefonica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComposicion.Designer.vb">
+      <DependentUpon>frmComposicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmComposicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguraciones.designer.vb">
+      <DependentUpon>frmConfiguraciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguraciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvertirTabla.designer.vb">
+      <DependentUpon>frmConvertirTabla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvertirTabla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctores.designer.vb">
+      <DependentUpon>frmDoctores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocumentos.Designer.vb">
+      <DependentUpon>frmDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntidades.designer.vb">
+      <DependentUpon>frmEntidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioEmailInd.Designer.vb">
+      <DependentUpon>frmEnvioEmailInd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioEmailInd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioEmails.designer.vb">
+      <DependentUpon>frmEnvioEmails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioEmails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstudios.Designer.vb">
+      <DependentUpon>frmEstudios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstudios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFotografia.designer.vb">
+      <DependentUpon>frmFotografia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFotografia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformes.Designer.vb">
+      <DependentUpon>frmInformes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngreso.designer.vb">
+      <DependentUpon>frmIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensajesEmail.designer.vb">
+      <DependentUpon>frmMensajesEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMensajesEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNivelesAccesos.Designer.vb">
+      <DependentUpon>frmNivelesAccesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNivelesAccesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes.designer.vb">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresupuesto.Designer.vb">
+      <DependentUpon>frmPresupuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPresupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedimientoDiario.Designer.vb">
+      <DependentUpon>frmProcedimientoDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedimientoDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRCaja.Designer.vb">
+      <DependentUpon>frmRCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistro.Designer.vb">
+      <DependentUpon>frmRegistro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReminderCitas.designer.vb">
+      <DependentUpon>frmReminderCitas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReminderCitas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextoProcedimientos.Designer.vb">
+      <DependentUpon>frmTextoProcedimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextoProcedimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLASE_HCLINICA_EFISICO.vb" />
+    <Compile Include="ImagenUnidadDental.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImagenUnidadDental.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD5.vb" />
+    <Compile Include="mdiOrthoSoft.designer.vb">
+      <DependentUpon>mdiOrthoSoft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiOrthoSoft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rptAuditoriaCalendario.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAuditoriaCalendario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAuditoriaCitas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAuditoriaCitas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAuditoriaCitasPacBorr.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAuditoriaCitasPacBorr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAuditoriaInformes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAuditoriaInformes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAuditoriaPacientes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAuditoriaPacientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBeneficiosTratamiento.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBeneficiosTratamiento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCitasDia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCitasDia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCitasDiaBrackets.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCitasDiaBrackets.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCitasFuturasPac.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCitasFuturasPac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCitasPaciente.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCitasPaciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCitasSinAsistir.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCitasSinAsistir.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCumpleaños.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCumpleaños.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGeneralPac.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGeneralPac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPacientesBloqueados.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPacientesBloqueados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSuCitaPaciente.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSuCitaPaciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SymmCrypto.vb" />
+    <Compile Include="Video.vb" />
+    <Compile Include="frmInformesVarios.Designer.vb">
+      <DependentUpon>frmInformesVarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformesVarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CaptureForm.resx">
+      <DependentUpon>CaptureForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentForm.vb.resx">
+      <DependentUpon>EnrollmentForm.vb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentForm2.resx">
+      <DependentUpon>EnrollmentForm2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaOdontoapp.resx">
+      <DependentUpon>frmAcercaOdontoapp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppointment.resx">
+      <DependentUpon>frmAppointment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditoria.resx">
+      <DependentUpon>frmAuditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAutenticacion.resx">
+      <DependentUpon>frmAutenticacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarDoctores.resx">
+      <DependentUpon>frmBuscarDoctores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEmpleados.resx">
+      <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEntidad.resx">
+      <DependentUpon>frmBuscarEntidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarHuella.resx">
+      <DependentUpon>frmBuscarHuella.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarPacientes.resx">
+      <DependentUpon>frmBuscarPacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarProveedor.resx">
+      <DependentUpon>frmBuscarProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarioPaciente.resx">
+      <DependentUpon>frmCalendarioPaciente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCentralTelefonica.resx">
+      <DependentUpon>frmCentralTelefonica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComposicion.resx">
+      <DependentUpon>frmComposicion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprobanteEgreso.resx">
+      <DependentUpon>frmComprobanteEgreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguraciones.resx">
+      <DependentUpon>frmConfiguraciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvensiones.resx">
+      <DependentUpon>frmConvensiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvertirTabla.resx">
+      <DependentUpon>frmConvertirTabla.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesbloqueoDias.resx">
+      <DependentUpon>frmDesbloqueoDias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctores.resx">
+      <DependentUpon>frmDoctores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocumentos.resx">
+      <DependentUpon>frmDocumentos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntidades.resx">
+      <DependentUpon>frmEntidades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioEmailInd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEnvioEmailInd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioEmails.resx">
+      <DependentUpon>frmEnvioEmails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioSMS.resx">
+      <DependentUpon>frmEnvioSMS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioSMSInd.resx">
+      <DependentUpon>frmEnvioSMSInd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadoCuenta.resx">
+      <DependentUpon>frmEstadoCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstudios.resx">
+      <DependentUpon>frmEstudios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExplorer.resx">
+      <DependentUpon>frmExplorer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFotografia.resx">
+      <DependentUpon>frmFotografia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGastos.resx">
+      <DependentUpon>frmGastos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoriaClinicaOrtodoncia2.resx">
+      <DependentUpon>frmHistoriaClinicaOrtodoncia2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoriaClinicaGeneral.resx">
+      <DependentUpon>frmHistoriaClinicaGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoriaClinicaOrtodoncia.resx">
+      <DependentUpon>frmHistoriaClinicaOrtodoncia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoriaClinicaOrtodoncia3.resx">
+      <DependentUpon>frmHistoriaClinicaOrtodoncia3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorarios.resx">
+      <DependentUpon>frmHorarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHuellas.resx">
+      <DependentUpon>frmHuellas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImagenes.resx">
+      <DependentUpon>frmImagenes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInformes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngreso.resx">
+      <DependentUpon>frmIngreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensajesEmail.resx">
+      <DependentUpon>frmMensajesEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientoDiario.resx">
+      <DependentUpon>frmMovimientoDiario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNivelesAccesos.resx">
+      <DependentUpon>frmNivelesAccesos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdontogramaGrafico.resx">
+      <DependentUpon>frmOdontogramaGrafico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes.resx">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresupuesto.resx">
+      <DependentUpon>frmPresupuesto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedimientoDiario.resx">
+      <DependentUpon>frmProcedimientoDiario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedimientosItems.resx">
+      <DependentUpon>frmProcedimientosItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgresoEnvioEmail.resx">
+      <DependentUpon>frmProgresoEnvioEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRCaja.resx">
+      <DependentUpon>frmRCaja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistro.resx">
+      <DependentUpon>frmRegistro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminderCitas.resx">
+      <DependentUpon>frmReminderCitas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmskype.resx">
+      <DependentUpon>frmskype.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashOrthosoft.resx">
+      <DependentUpon>frmSplashOrthosoft.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextoProcedimientos.resx">
+      <DependentUpon>frmTextoProcedimientos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagenUnidadDental.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImagenUnidadDental.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiOrthoSoft.resx">
+      <DependentUpon>mdiOrthoSoft.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAuditoriaCalendario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAuditoriaCalendario.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAuditoriaCitas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAuditoriaCitas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAuditoriaCitasPacBorr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAuditoriaCitasPacBorr.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAuditoriaInformes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAuditoriaInformes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAuditoriaPacientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAuditoriaPacientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBeneficiosRecomedaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBeneficiosRecomedaciones.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBeneficiosTratamiento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBeneficiosTratamiento.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCEgresoFormato1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCEgresoFormato1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCitasDia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCitasDia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCitasDiaBrackets.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCitasDiaBrackets.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCitasFuturasPac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCitasFuturasPac.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCitasPaciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCitasPaciente.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCitasSinAsistir.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCitasSinAsistir.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptContratoPrestServ-SCO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptContratoPrestServ-SCO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCumpleaños.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCumpleaños.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGeneralPac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGeneralPac.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHistoriaClinica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHistoriaClinica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHistoriaClinicaGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHistoriaClinicaGeneral.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHistoriaClinicaOrto2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHistoriaClinicaOrto2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHistoriaClinicaOrto3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHistoriaClinicaOrto3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLibroDiario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLibroDiario.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPacientesBloqueados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPacientesBloqueados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPresupuesto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPresupuesto.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptProcedimientosDiarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptProcedimientosDiarios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRCajaFormato1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRCajaFormato1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRCajaFormato2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRCajaFormato21.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSuCitaPaciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSuCitaPaciente.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformesVarios.resx">
+      <DependentUpon>frmInformesVarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerificationForm.resx">
+      <DependentUpon>VerificationForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxSKYPECONTACTSLib">
+      <Guid>{022CEF2F-A311-41ED-8C87-DEB3D34CC3DD}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MonthLib">
+      <Guid>{5A2B22D1-24FE-4CEB-917C-7BC2946A67ED}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SKYPE4COMLib">
+      <Guid>{03282B5D-B38F-469D-849A-09B0A7F4881B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SKYPECONTACTSLib">
+      <Guid>{022CEF2F-A311-41ED-8C87-DEB3D34CC3DD}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hkey-w32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Orthosoft.ico" />
+    <None Include="app.config" />
+    <None Include="Resources\Convensiones Odontograma.png" />
+    <None Include="Resources\ConvensionesOdonto.bmp" />
+    <None Include="Resources\bullet_triangle_blue.png" />
+    <None Include="Resources\DienteSolo.bmp" />
+    <None Include="Resources\OdontoIni.bmp" />
+    <None Include="Resources\photo_scenery.png" />
+    <None Include="Resources\spash.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\fondoplantilla.jpg" />
+    <None Include="Resources\fondopaciente.png" />
+    <None Include="Resources\fondoentidad.png" />
+    <None Include="Resources\fondoempleado.png" />
+    <None Include="Resources\fondodoctor.png" />
+    <None Include="Resources\fondocliente.png" />
+    <None Include="Resources\capturacamara.bmp" />
+    <None Include="Resources\LunaDental3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic para Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
