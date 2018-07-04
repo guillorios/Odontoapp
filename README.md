@@ -12,7 +12,6 @@ Autor
 -----
 Ing. Guillermo Andres Rios
 
-http://www.odontoapp.com
 http://www.sioningenieria.com.co
 
 Tel: +(57)3187558512
